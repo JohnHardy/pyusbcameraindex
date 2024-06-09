@@ -12,6 +12,17 @@ dependencies = [
 requires-python = ">=3.10"
 readme = "README.md"
 license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows"
+]
+keywords = ["opencv", "python", "usb", "directshow", "index"]
+
+[project.urls]
+"Homepage" = "https://github.com/JohnHardy/pyusbcameraindex"
+"Repository" = "https://github.com/JohnHardy/pyusbcameraindex"
+"Bug Tracker" = "https://github.com/JohnHardy/pyusbcameraindex/issues"
 
 [build-system]
 requires = ["pdm-backend"]
