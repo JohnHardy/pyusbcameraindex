@@ -1,0 +1,33 @@
+[project]
+name = "pyusbcameraindex"
+version = "1.0.0"
+description = "Identify and select your USB cameras in Python for use with OpenCV."
+authors = [
+    {name = "John Hardy", email = ""},
+]
+dependencies = [
+    "comtypes>=1.4.4",
+    "pywin32>=306",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.scripts]
+test = "pytest"
+lint = "ruff check ."
+list = "python -m pyusbcameraindex.directshow"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.2.2",
+    "ruff>=0.4.8",
+    "pytest-mock>=3.14.0",
+]
